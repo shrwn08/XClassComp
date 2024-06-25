@@ -9,24 +9,24 @@ class App extends Component {
     };
   }
 
-  increamentCount=()=>{
-    this.setState({count:this.state.count + 1});
-  }
+  incrementCount = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
 
-decreamentCount=()=>{
-    this.setState({count:this.state.count - 1});
-  }
+  decrementCount = () => {
+    this.setState({ count: this.state.count - 1 });
+  };
 
   render() {
     return (
       <div className="App">
         <h1>Counter App</h1>
         <p>Count: {this.state.count}</p>
-        <button type="button" onClick={this.increamentCount}>
-          Increament
+        <button type="button" onClick={this.incrementCount}>
+          Increment
         </button>
-        <button type="button" onClick={this.decreamentCount}>
-          Decreament
+        <button type="button" onClick={this.decrementCount}>
+          Decrement
         </button>
       </div>
     );
